@@ -1,78 +1,76 @@
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  padding: 15px 0;
-}
-
-.navbar-brand {
-  font-size: 25px;
-  letter-spacing: 1px;
-}
-
-.nav-link {
-  margin-left: 15px;
-  font-size: 16px;
-}
-
-.nav-link.active {
-  color: #ffc107 !important;
-}
-
+/* Home Slider */
 .slider-img {
   height: 500px;
   object-fit: cover;
-  filter: brightness(65%);
 }
 
 .carousel-caption {
-  bottom: 25%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .carousel-caption h1 {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: bold;
 }
 
-.carousel-caption p {
-  font-size: 19px;
+/* Service Cards */
+.service-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 .card {
   border: none;
-  transition: 0.3s;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
 }
 
-footer {
-  margin-top: 40px;
+.card-title {
+  font-weight: 600;
 }
 
+/* Contact */
+#contact {
+  background-color: #f8f9fa;
+}
+
+#contact .form-control {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+#contact .btn {
+  padding: 12px;
+  font-weight: 600;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .slider-img {
     height: 300px;
   }
 
-  .carousel-caption {
-    bottom: 10%;
-  }
-
   .carousel-caption h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
+}
 
-  .carousel-caption p {
-    font-size: 14px;
-  }
+
+.about-img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
 }
